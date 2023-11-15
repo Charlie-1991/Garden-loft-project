@@ -11,7 +11,7 @@ $("#range").on("input change", function (event) {
 });
 
 function zoom(direction) {
-  var slider = $("#range");
+  var slider = $("range");
   var step = parseInt(slider.attr("step"), 10);
   var currentSliderValue = parseInt(slider.val(), 10);
   var newStepValue = currentSliderValue + step;
