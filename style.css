@@ -1,5 +1,4 @@
 html, body{
-  height: 100%;
   font-family: 'Inter', sans-serif;
   background: rgba(127, 129, 128, 1);
 }
@@ -15,13 +14,13 @@ p{
   display: flex;
   justify-content: start;
   margin-right: auto;
-  margin-left: 25%;
+  margin-left: 22%;
   margin-top: 7%;
-  font-size: 5vw;
+  font-size: 6vw;
   color: white;
 }
 .toggle{
-  --width: 15vw;
+  --width: 17vw;
   --height: calc(var(--width) / 3);
 
   position: relative;
@@ -34,7 +33,11 @@ p{
   cursor: pointer;
   margin-top: 1%;
   margin-left: auto;
-  margin-right: 35%;
+  margin-right: 28%;
+}
+
+.toggle:hover{
+  transform: scale(1.1);
 }
 
 .toggle input {
@@ -48,7 +51,7 @@ p{
   width: 100%;
   height: 100%;
   border-radius: var(--height);
-  background-color: rgb(192, 14, 14);
+  background-color: #B13636;
   transition: all 0.4s ease-in-out;
 }
 
@@ -66,7 +69,7 @@ p{
 }
 
 .toggle input:checked+.slider {
-  background-color: rgb(24, 150, 24);
+  background-color: #5EAC63;
 }
 
 .toggle input:checked+.slider::before {
@@ -75,11 +78,11 @@ p{
 
 .toggle .labels {
   position: absolute;
-  top: 30%;
-  left: 10%;
-  width: 90%;
+  top: 33%;
+  left: -1.5%;
+  width: 98%;
   height: 100%;
-  font-size: 2vw;
+  font-size: 1.7vw;
   font-family: sans-serif;
   transition: all 0.4s ease-in-out;
 }
@@ -113,50 +116,61 @@ p{
 }
 
 .Back{
-  width: 30vw;
+  width: 45vw;
   height: 5vw;
   background-color: #FFC700;
   color: black;
-  font-size: 2.5vw;
+  font-size: 4vw;
   border: none;
   border-radius: 3vw;
   cursor:pointer;
   margin: 1vw;
-  margin-left: 33%;
-  margin-top: 5%;
+  margin-left: 28%;
+  margin-top: 3%;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
 }
 
+.Back:hover{
+  transform: scale(1.1);
+}
 /*Temeperature buttons page*/
 
 .Temperature-page p{
-  margin-left: 32vw;
+  margin-left: 34vw;
   font-size: 3.5vw;
 }
 
 .container {
-  width: 60%;
-  margin: 50px auto;
+  width: 65vw;
+  margin: 3vw;
+  margin-left: 17vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-}
-
-input[type=range] {
-  width: 100%;
-  height: 10vw;
+  
 }
 
 button {
-  flex: 0 0 auto;
-  width: 10vw;
-  height: 10vw;
-  border-radius: 100%;
-  background: white;
-  font-size: 6vw;
-  border: 1vw solid black;
-  cursor: pointer;
-  -webkit-appearance: none;
-  margin: 0 10px;
+  border: none;
+  background: none;
 }
+
+button img{
+  width: 17.5vw;
+}
+
+button:hover{
+  transform: scale(1.1);
+}
+
+output{
+  background-color: white;
+  border: solid black;
+  border-radius: 25%;
+  font-size: 10vw;
+  width: 17vw;
+  height: 13vw;
+}
+
+
 
