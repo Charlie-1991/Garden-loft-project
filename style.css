@@ -1,6 +1,6 @@
 html, body{
   font-family: 'Inter', sans-serif;
-  background: rgba(127, 129, 128, 1);
+  background:#827A63;
 }
 
 h1{
@@ -133,8 +133,9 @@ p{
 .Back:hover{
   transform: scale(1.1);
 }
-/*Temeperature buttons page*/
 
+
+/*Temeperature buttons page*/
 .Temperature-page p{
   margin-left: 34vw;
   font-size: 3.5vw;
@@ -172,5 +173,8 @@ output{
   height: 13vw;
 }
 
-
-
+/*Dashboard page*/
+.top-bar{
+  display: flex;
+  justify-content: flex-end;
+}
