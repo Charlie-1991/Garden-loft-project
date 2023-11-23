@@ -3,6 +3,10 @@ html, body{
   background:#827A63;
 }
 
+.full-body{
+  width: 100%;
+  height: 100%;
+}
 h1{
   color: white;
   display: flex;
@@ -15,7 +19,7 @@ p{
   justify-content: start;
   margin-right: auto;
   margin-left: 22%;
-  margin-top: 7%;
+  margin-top: 4%;
   font-size: 6vw;
   color: white;
 }
@@ -116,7 +120,7 @@ p{
 }
 
 .Back{
-  width: 45vw;
+  width: 52vw;
   height: 5vw;
   background-color: #FFC700;
   color: black;
@@ -124,8 +128,8 @@ p{
   border: none;
   border-radius: 3vw;
   cursor:pointer;
-  margin: 1vw;
-  margin-left: 28%;
+  margin: 3vw;
+  margin-left: 24%;
   margin-top: 3%;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
 }
@@ -135,6 +139,10 @@ p{
 }
 
 
+
+
+
+
 /*Temeperature buttons page*/
 .Temperature-page p{
   margin-left: 34vw;
@@ -142,22 +150,15 @@ p{
 }
 
 .container {
-  width: 65vw;
-  margin: 3vw;
-  margin-left: 17vw;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  
 }
 
-button {
-  border: none;
+button{
   background: none;
-}
-
-button img{
-  width: 17.5vw;
+  border: none;
 }
 
 button:hover{
@@ -169,79 +170,121 @@ output{
   border: solid black;
   border-radius: 25%;
   font-size: 10vw;
-  width: 17vw;
-  height: 13vw;
+  width: 15vw;
+  height: 12vw;
 }
 
-/*Dashboard page*/
-.top-bar{
+
+
+
+
+
+
+
+/*Supporter Dashboard page*/
+.supporter-top-bar{
   display: flex;
   align-items: center;
   width: 100%;
-  margin-right: 0vw;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
 }
 
-.top-bar button{
-  margin-top: -1vw;
-  margin-bottom: -1vw;
-}
-.garden-loft img{
+.S-garden-loft img{
   display: flex;
   justify-content: flex-start;
-  width: 10vw;
-  height: 5vw;
+  width: 9vw;
+  height: 6.5vw;
+  background-image: none;
+  margin-top: .7vw;
+  margin-bottom: .7vw;
+  border-radius: 22px;
+}
+.S-garden-loft img:hover{
+  background-color: #5F5A49;
+  border-radius: 20px;
 }
 
+
 .rigth-top-bar{
-  margin-left: 45vw;
+  margin-top: .5vw;
+  margin-left: 48vw;
+  display: flex;
+  justify-items: flex-end;
 }
-.Home img{
+
+.S-Home img{
   position: relative;
   width: 9vw;
   height: 6vw;
-  margin-top: 1.5vw;
-  margin-bottom: 0vw;
+  border: solid .215vw white;
+  border-radius: 22px;
+}
+.S-Home img:hover{
+  background-color: #5F5A49;
+  border-radius: 22px;
 }
 
-.Profile img{
+.S-Profile img{
   width: 9vw;
   height: 6vw;
+  border: solid .215vw white;
+  border-radius: 22px;
+}
+.S-Profile img:hover{
+  background-color: #5F5A49;
+  border-radius: 22px;
 }
 
-.loft img{
+.S-loft img{
   width: 9vw;
   height: 6vw;
+  border: solid .215vw white;
+  border-radius: 22px;
+}
+.S-loft img:hover{
+  background-color: #5F5A49;
+  border-radius: 22px;
 }
 
-.Help img{
+.S-Help img{
   width: 9vw;
   height: 6vw;
+  border: solid .215vw white;
+  border-radius: 22px;
+}
+.S-Help img:hover{
+  background-color: #5F5A49;
+  border-radius: 22px;
 }
 
-.container-IOTs{
-display: grid;
-grid-template-columns: auto auto auto auto;
-margin: 0vw 0vw 0vw 0vw;
-}
+.supporter-container-IOTs{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin: 1.5vw 0vw 0vw 0vw;
+  }
+  
 
 .type1{
   display: block;
   text-align: center;
   background-color: white;
-  width: 18vw;
-  height: 20vw;
+  width: 21vw;
+  height: 20.5vw;
   border-radius: 40px;
-  border: solid 1.5vw  #FFC700;
-  margin: 2vw 2vw;
-  margin-left: 1vw;
-  margin-right: 1vw;
+  margin: 1vw 1vw;
+  margin-left: 2vw;
+  margin-right: 0vw;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+}
+.type1:hover{
+  background-color: #FFC700;
 }
 
 .type1 img{
   width: 4vw;
   height: 5vw;
 }
+
 .type1 h2{
   color: #827A63;
   font-size: 2vw;
@@ -256,10 +299,14 @@ margin: 0vw 0vw 0vw 0vw;
   text-align: center;
   background-color: white;
   width:20vw;
-  height: 12vw;
+  height: 14vw;
   border-radius: 40px;
-  border: solid 1.5vw  #FFC700;
-  margin: 2vw 2vw;
+  margin: 1vw 1vw;
+  margin-top: 1vw;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+}
+.type2:hover{
+  background-color: #FFC700;
 }
 
 .type2 h2{
@@ -270,8 +317,7 @@ margin: 0vw 0vw 0vw 0vw;
 
 .type2 h3{
   margin: 2vw 2vw;
-  color: white;
-  background-color: #827A63;
+  color: black;
   border-radius: 40px;
   font-size: 1vw;
 }
@@ -282,26 +328,202 @@ margin: 0vw 0vw 0vw 0vw;
   text-align: center;
   background-color: white;
   width: 20vw;
-  height: 30vw;
+  height: 25vw;
   border-radius: 40px;
-  border: solid 1.5vw  #FFC700;
-  margin: 2vw 2vw;
-  margin-top: -8vw;
+  margin: 1vw 1vw;
+  margin-top: -3.5vw;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
 }
-
+.type3:hover{
+  background-color: #FFC700;
+}
 .type3 h2{
   color: #827A63;
   font-size: 2vw;
 }
 
 .type3 h3{
-  color: white;
-  background-color: #827A63;
+  color: black;
   border-radius: 40px;
   font-size: 1vw;
 }
 
 
+
+
+
+
+
+
+/*Resident Dashboard page*/
+
+.resident-top-bar{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-right: 0vw;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+}
+
+.resident-top-bar button{
+  margin-top: .5vw;
+  margin-bottom: .5vw;
+}
+.R-garden-loft img{
+  display: flex;
+  justify-content: flex-start;
+  width: 9vw;
+  height: 6.5vw;
+  background-image: none;
+
+}
+.R-garden-loft img:hover{
+  background-color: #5F5A49;
+  border-radius: 20px;
+}
+
+.R-Controls img{
+  position: relative;
+  width: 9vw;
+  height: 6.2vw;
+  border: solid .1vw white;
+  border-radius: 22px;
+}
+.R-Controls img:hover{
+  background-color: #5F5A49;
+  border-radius: 22px;
+}
+
+.R-watch-tv img{
+  width: 9vw;
+  height: 6.2vw;
+  border: solid .1vw white;
+  border-radius: 22px;
+}
+.R-watch-tv img:hover{
+  background-color: #5F5A49;
+  border-radius: 22px;
+}
+
+.R-schedule img{
+  width: 9vw;
+  height: 6.2vw;
+  border: solid .1vw white;
+  border-radius: 22px;
+}
+.R-schedule img:hover{
+  background-color: #5F5A49;
+  border-radius: 22px;
+}
+
+.R-contacts img{
+  width: 9vw;
+  height: 6.2vw;
+  border: solid .1vw white;
+  border-radius: 22px;
+}
+
+.R-contacts img:hover{
+  background-color: #5F5A49;
+  border-radius: 22px;
+}
+.R-support-button img{
+  width: 9vw;
+  height: 6.2vw;
+  border: solid .1vw white;
+  border-radius: 22px;
+  margin-left: 12vw;
+}
+
+.R-support-button img:hover{
+  background-color: #5F5A49;
+  border-radius: 22px;
+}
+.R-picture-button img{
+  width: 9vw;
+  height: 6.7vw;
+  border-radius: 22px;
+  margin-left: 12vw;
+}
+
+.R-picture-button img:hover{
+  background-color: #5F5A49;
+  border-radius: 22px;
+}
+  
+.resident-container{
+  display: grid;
+  grid-template-columns: 60vw 20vw;
+  margin: 1.5vw 0vw 0vw 0vw;
+}
+.IOTs{
+  display: grid;
+  grid-template-columns: 33vw 33vw;
+}
+
+.reminders{
+  display: block;
+  margin-left: 65vw;
+  margin-top: -45vw;
+}
+.type4{
+  display: block;
+  text-align: center;
+  background-color: white;
+  width: 29vw;
+  height: 20.5vw;
+  border-radius: 40px;
+  margin: 1vw 1vw;
+  margin-left: 2vw;
+  margin-right: 0vw;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+}
+.type4:hover{
+  background-color: #FFC700;
+}
+
+.type4 img{
+  width: 4vw;
+  height: 5vw;
+}
+
+.type4 h2{
+  color: #827A63;
+  font-size: 2vw;
+
+}
+.type4 h3{
+  font-size: 2vw;
+}
+
+.type5{
+  display: block;
+  text-align: center;
+  background-color: white;
+  width:29vw;
+  height: 13vw;
+  border-radius: 40px;
+  margin: 1vw 1vw;
+  margin-top: 1vw;
+  margin-bottom: 2vw;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+}
+.type5:hover{
+  background-color: #FFC700;
+}
+
+.type5 h2{
+  color: black;
+  font-size: 2vw;
+  color: #827A63;
+}
+
+.type5 h3{
+  margin: 2vw 2vw;
+  color: black;
+  border-radius: 40px;
+  font-size: 1vw;
+}
 
 
 
