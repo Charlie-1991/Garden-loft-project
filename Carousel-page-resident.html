@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Carousel</title>
+    <title>Dashboard for resident</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,7 +11,9 @@
       href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
   </head>
+
   <body>
     <div class="full-body">
       <div class="resident-top-bar">
@@ -38,50 +40,18 @@
         </button>
       </div>
 
-      <div class="resident-container">
-        <div class="IOTs">
-          <button class="type4">
-            <h2>Door Lock</h2>
-            <img class="lock1" src="images/green-lock.png" alt="" />
-            <h3>LOCKED</h3>
-          </button>
+      <div class="carousel"></div>
 
-          <button class="type4">
-            <h2>Loft Lights</h2>
-            <img class="bulb" src="images/green-bulb.png" alt="" />
-            <h3>ON</h3>
-          </button>
+      <img class="nature" src="images/family pic1.png" width="100%" />
+      <img class="nature" src="images/family pic2.png" width="100%" />
+      <img class="nature" src="images/family pic3.png" width="100%" />
+      <img class="nature" src="images/family pic4.png" width="100%" />
+      <img class="nature" src="images/family pic5.png" width="100%" />
+      <img class="nature" src="images/family pic6.png" width="100%" />
 
-          <button class="type4">
-            <h2>Temperature</h2>
-            <img class="Temp" src="images/green-temp.png" alt="" />
-            <h3>25°C</h3>
-          </button>
-
-          <button class="type4">
-            <h2>Fall Detection</h2>
-            <img class="fall1" src="images/green-human.png" alt="" />
-            <h3>NO FALL</h3>
-          </button>
-        </div>
-
-        <div class="reminders">
-          <button class="type5">
-            <h2>2:00 PM FRIDAY</h2>
-            <h3>November 17, 2023</h3>
-          </button>
-
-          <button class="type5">
-            <h2>Quote of the Day</h2>
-            <h3>Old enough to retire; young enough to enjoy it</h3>
-          </button>
-
-          <button class="type5">
-            <h2>ACTIVITIES</A></h2>
-            <h3>9:00pm   Supper with Len</h3>
-          </button>
-        </div>
-      </div>
+      <script>
+        w3.slideshow(".nature", 1500);
+      </script>
     </div>
   </body>
 </html>

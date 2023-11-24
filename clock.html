@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock</title>
+    <style>
+      /* Optional: Add some styling to the clock */
+      #clock {
+        font-size: 24px;
+        font-family: Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Display the clock time in this span element -->
+    <span id="clock"></span>
+
+    <script>
+      // Function to update the clock time
+      function updateClock() {
+        var now = new Date();
+        var hours = now.getHours();
+        var minutes = now.getMinutes();
+        var seconds = now.getSeconds();
+
+        // Format the time as HH:MM:SS
+        var timeString =
+          padZero(hours) + ":" + padZero(minutes) + ":" + padZero(seconds);
+
+        // Update the content of the #clock span element
+        document.getElementById("clock").innerHTML = timeString;
+      }
+
+      // Function to pad single-digit numbers with a leading zero
+      function padZero(num) {
+        return (num < 10 ? "0" : "") + num;
+      }
+
+      // Update the clock every second
+      setInterval(updateClock, 1000);
+
+      // Initial call to display the clock immediately
+      updateClock();
+    </script>
+  </body>
+</html>

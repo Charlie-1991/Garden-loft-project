@@ -260,7 +260,7 @@ output{
 .supporter-container-IOTs{
   display: grid;
   grid-template-columns: auto auto auto auto;
-  margin: 1.5vw 0vw 0vw 0vw;
+  margin: .5vw 0vw 0vw 0vw;
   }
   
 
@@ -269,7 +269,7 @@ output{
   text-align: center;
   background-color: white;
   width: 21vw;
-  height: 20.5vw;
+  height: 18vw;
   border-radius: 40px;
   margin: 1vw 1vw;
   margin-left: 2vw;
@@ -328,10 +328,10 @@ output{
   text-align: center;
   background-color: white;
   width: 20vw;
-  height: 25vw;
+  height: 22vw;
   border-radius: 40px;
   margin: 1vw 1vw;
-  margin-top: -3.5vw;
+  margin-top: -3vw;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
 }
 .type3:hover{
@@ -464,14 +464,14 @@ output{
 .reminders{
   display: block;
   margin-left: 65vw;
-  margin-top: -45vw;
+  margin-top: -40vw;
 }
 .type4{
   display: block;
   text-align: center;
   background-color: white;
   width: 29vw;
-  height: 20.5vw;
+  height: 18vw;
   border-radius: 40px;
   margin: 1vw 1vw;
   margin-left: 2vw;
@@ -482,7 +482,21 @@ output{
   background-color: #FFC700;
 }
 
-.type4 img{
+.lock1{
+  width: 4vw;
+  height: 5vw;
+}
+
+.bulb{
+  width: 4vw;
+  height: 5vw;
+}
+
+.Temp{
+  width: 4vw;
+  height: 5vw;
+}
+.fall1{
   width: 4vw;
   height: 5vw;
 }
@@ -501,7 +515,7 @@ output{
   text-align: center;
   background-color: white;
   width:29vw;
-  height: 13vw;
+  height: 11.2vw;
   border-radius: 40px;
   margin: 1vw 1vw;
   margin-top: 1vw;
@@ -525,5 +539,9 @@ output{
   font-size: 1vw;
 }
 
-
+/*Carousel*/
+.nature{
+  width: 90vw;
+  height: 40vw;
+}
 
