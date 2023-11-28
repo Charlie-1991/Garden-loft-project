@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard for resident</title>
+    <title>carousel</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <script src="script.js"></script>
   </head>
 
   <body>
@@ -40,18 +40,42 @@
         </button>
       </div>
 
-      <div class="carousel"></div>
-
-      <img class="nature" src="images/family pic1.png" width="100%" />
-      <img class="nature" src="images/family pic2.png" width="100%" />
-      <img class="nature" src="images/family pic3.png" width="100%" />
-      <img class="nature" src="images/family pic4.png" width="100%" />
-      <img class="nature" src="images/family pic5.png" width="100%" />
-      <img class="nature" src="images/family pic6.png" width="100%" />
-
-      <script>
-        w3.slideshow(".nature", 1500);
-      </script>
+      <div id="carousel-container">
+        <div id="image-slider">
+          <!-- Images or content items go here -->
+          <img
+            class="carousel-image"
+            src="images/family pic1.png"
+            alt="Image 1"
+          />
+          <img
+            class="carousel-image"
+            src="images/family pic2.png"
+            alt="Image 2"
+          />
+          <img
+            class="carousel-image"
+            src="images/family pic3.png"
+            alt="Image 3"
+          />
+          <img
+            class="carousel-image"
+            src="images/family pic4.png"
+            alt="Image 3"
+          />
+          <img
+            class="carousel-image"
+            src="images/family pic5.png"
+            alt="Image 3"
+          />
+          <img
+            class="carousel-image"
+            src="images/family pic6.png"
+            alt="Image 3"
+          />
+          <!-- Add more images as needed -->
+        </div>
+      </div>
     </div>
   </body>
 </html>

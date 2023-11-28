@@ -454,7 +454,7 @@ output{
 .resident-container{
   display: grid;
   grid-template-columns: 60vw 20vw;
-  margin: 1.5vw 0vw 0vw 0vw;
+  margin: 1vw 0vw 0vw 0vw;
 }
 .IOTs{
   display: grid;
@@ -463,8 +463,8 @@ output{
 
 .reminders{
   display: block;
-  margin-left: 65vw;
-  margin-top: -40vw;
+  margin-left: 5vw;
+  margin-top: -1vw;
 }
 .type4{
   display: block;
@@ -473,7 +473,7 @@ output{
   width: 29vw;
   height: 18vw;
   border-radius: 40px;
-  margin: 1vw 1vw;
+  margin: 0vw 0vw;
   margin-left: 2vw;
   margin-right: 0vw;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
@@ -522,9 +522,6 @@ output{
   margin-bottom: 2vw;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
 }
-.type5:hover{
-  background-color: #FFC700;
-}
 
 .type5 h2{
   color: black;
@@ -540,8 +537,34 @@ output{
 }
 
 /*Carousel*/
-.nature{
-  width: 90vw;
-  height: 40vw;
+#carousel-container {
+  width: 87vw;
+  margin: 1.5vw;
+  margin-left: 5.5vw;
+  overflow: hidden;
+}
+
+#image-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Optional: Style the navigation buttons */
+.carousel-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: white;
+  background-color: black;
+  border: none;
+  padding: 10px;
+  margin: 0 10px;
 }
 

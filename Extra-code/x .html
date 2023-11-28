@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Carousel</title>
+    <style>
+      /* Basic styling for the carousel container and images */
+      #carousel-container {
+        width: 60%;
+        margin: auto;
+        overflow: hidden;
+      }
+
+      #image-slider {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+
+      .carousel-image {
+        width: 100%;
+        height: auto;
+      }
+
+      /* Optional: Style the navigation buttons */
+      .carousel-btn {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 24px;
+        color: white;
+        background-color: black;
+        border: none;
+        padding: 10px;
+        margin: 0 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="carousel-container">
+      <div id="image-slider">
+        <!-- Images or content items go here -->
+        <img
+          class="carousel-image"
+          src="images/family pic1.png"
+          alt="Image 1"
+        />
+        <img
+          class="carousel-image"
+          src="images/family pic2.png"
+          alt="Image 2"
+        />
+        <img
+          class="carousel-image"
+          src="images/family pic3.png"
+          alt="Image 3"
+        />
+        <img
+          class="carousel-image"
+          src="images/family pic4.png"
+          alt="Image 3"
+        />
+        <img
+          class="carousel-image"
+          src="images/family pic4.png"
+          alt="Image 3"
+        />
+        <img
+          class="carousel-image"
+          src="images/family pic5.png"
+          alt="Image 3"
+        />
+        <!-- Add more images as needed -->
+      </div>
+    </div>
+
+    <script>
+      var currentIndex = 0;
+
+      function showSlide(index) {
+        var slider = document.getElementById("image-slider");
+        var totalSlides = document.querySelectorAll(".carousel-image").length;
+
+        if (index < 0) {
+          currentIndex = totalSlides - 1;
+        } else if (index >= totalSlides) {
+          currentIndex = 0;
+        } else {
+          currentIndex = index;
+        }
+
+        var transformValue = -currentIndex * 100 + "%";
+        slider.style.transform = "translateX(" + transformValue + ")";
+      }
+
+      function prevSlide() {
+        showSlide(currentIndex - 1);
+      }
+
+      function nextSlide() {
+        showSlide(currentIndex + 1);
+      }
+
+      // Optional: Auto play the carousel
+      setInterval(nextSlide, 3000); // Change slide every 3 seconds
+    </script>
+  </body>
+</html>
