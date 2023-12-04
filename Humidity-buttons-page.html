@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Light-switch-page</title>
+    <title>Humidity buttons page</title>
     <link rel="stylesheet" href="main-style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,25 +12,22 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <h1>Click the button to turn ON and OFF</h1>
-    <div class="switches">
-      <p>
-        Main Light<label class="toggle">
-          <input type="checkbox" />
-          <span class="slider"></span>
-          <span class="labels" data-on="ON" data-off="OFF"></span>
-        </label>
-      </p>
 
-      <p>
-        Garage Light
-        <label class="toggle">
-          <input type="checkbox" />
-          <span class="slider"></span>
-          <span class="labels" data-on="ON" data-off="OFF"></span>
-        </label>
-      </p>
+  <script src="script.js"></script>
+  <body>
+    <h1>Click up or down for the temperature</h1>
+    <div class="Temperature-page">
+      <p>Room Humidity</p>
+    </div>
+
+    <div class="container">
+      <button class="down">
+        <img class="1" src="images/down.png" alt="" />
+      </button>
+      <output> 25% </output>
+      <button class="up">
+        <img src="images/up.png" alt="" />
+      </button>
     </div>
     <a href="Dashboard-carousel-page-resident.html">
       <button class="Back">GO BACK</button>
