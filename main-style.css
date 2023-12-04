@@ -1,12 +1,12 @@
 html, body{
+  display: flex;
+  flex-direction: column;
   font-family: 'Inter', sans-serif;
   background:#827A63;
+  gap: 3vw;
+  overflow: hidden;
 }
 
-.full-body{
-  width: 100%;
-  height: 100%;
-}
 h1{
   color: white;
   display: flex;
@@ -23,6 +23,7 @@ p{
   font-size: 6vw;
   color: white;
 }
+
 .toggle{
   --width: 17vw;
   --height: calc(var(--width) / 3);
@@ -91,8 +92,8 @@ p{
   transition: all 0.4s ease-in-out;
 }
 
-.toggle .labels::after {
-  content: attr(data-off);
+.toggle {
+  content: attr(data-off); 
   position: absolute;
   right: 1vw;
   color: #4d4d4d;
@@ -102,7 +103,7 @@ p{
 }
 
 .toggle .labels::before {
-  content: attr(data-on);
+  content: attr(data-on); 
   position: absolute;
   left: 2vw;
   color: #ffffff;
@@ -377,8 +378,8 @@ output{
   width: 9vw;
   height: 8vw;
   background-image: none;
-
 }
+
 .R-garden-loft img:hover{
   background-color: #5F5A49;
   border-radius: 21px;
@@ -390,6 +391,7 @@ output{
   height: 8vw;
   border-radius: 22px;
 }
+
 .R-Controls img:hover{
   background-color: #5F5A49;
   border-radius: 22px;
@@ -449,10 +451,14 @@ output{
 }
   
 .resident-container{
-  display: grid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  /* display: grid;
   grid-template-columns: 60vw 20vw;
   margin: 1vw 0vw 0vw 0vw;
-}
+} */
 .IOTs{
   display: grid;
   grid-template-columns: 33vw 33vw;
@@ -579,10 +585,11 @@ output{
   position: relative;
   max-width: 1300vw;
   margin-top: 2vw;
+
  .arrow-left {
     position: absolute;
     left: 10%;
-    top: 50%;
+    top: 40%;
     transform: translate3d(0, -50%, 0);
     color: white;
     font-size: 28px;
@@ -598,7 +605,7 @@ output{
   .arrow-right {
     position: absolute;
     right: 10%;
-    top: 50%;
+    top: 40%;
     transform: translate3d(0, -50%, 0);
     color: white;
     font-size: 28vw;
@@ -654,12 +661,12 @@ output{
     display: block;
     width:65vw;
     height: 40vw;
-    margin: 0 auto;
+    margin: auto auto;
     position: relative;
     text-align: center;
     line-height: 10vw;
     color: white;
-    @media (max-width: 50vw) {
+    @media (max-width: 45vw) {
     height: 4vw;
     }
     .slide:hover{
@@ -668,11 +675,11 @@ output{
     .slide {
       border-radius: 2vw;
       display: block;
-      width: 80%;
-      height: 38vw;
+      width: 60%;
+      height: 25vw;
       position: absolute;
       left: 50%;
-      top: 20vw;
+      top: 14vw;
       transform: translate3d(-50%, -50%, 0) scale3d(.4, .4, 1);
       transition: transform 0.3s ease-in-out 0s, z-index .2s ease-in-out .1s;
       background-color:#2C2A40;
@@ -700,18 +707,17 @@ output{
         background-color: white;
       }
       &.prev-2 {
-        transform: translate3d(-105%, -50%, 0) scale3d(.4, .4, 1);
+        transform: translate3d(-120%, -50%, 0) scale3d(.4, .4, 1);
         z-index: 1;
         opacity: 0.5;
-        
       }
       &.prev-1 {
-        transform: translate3d(-85%, -50%, 0) scale3d(.6, .6, 1);
+        transform: translate3d(-100%, -50%, 0) scale3d(.6, .6, 1);
         z-index: 2;
       }
       &.next-1 {
         z-index: 2;
-        transform: translate3d(-15%, -50%, 0) scale3d(.6, .6, 1);
+        transform: translate3d(-0%, -50%, 0) scale3d(.6, .6, 1);
       }
       &.next-2 {
         z-index: 1;
@@ -730,20 +736,79 @@ output{
 }
 #IOT-h1{
   color: black;
-  margin-top: 1vw;
+  margin-top: .5vw;
+  margin-bottom: 1vw;
   user-select: none;
+  font-size: 3.2vw;
+  font-family: 'Inter', sans-serif;;
 }
 #IOT-img{
-  margin-top: -2vw;
-  width: 10vw;
-  height: 11vw;
+  width: 4vw;
+  height: 5vw;
 }
 #IOT-h3{
   color: black;
-  font-size: 5vw;
-  margin-top: 0vw;
+  font-size: 2.2vw;
+  margin-top: -4vw;
   user-select: none;
 }
+a{
+  text-decoration: none;
+}
+
+
+/*Light bulb*/
+#light-bulb{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:none;
+  
+}
+
+#light-bulb-toggle {
+  position: relative;
+  width: 16vw;
+  height: 6vw;
+  background: #212121;
+  border-radius: 50px;
+}
+#light-bulb-toggle input {
+  appearance: none;
+}
+
+#light-bulb-toggle span {
+  position: absolute; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 5.5vw;
+  height: 5.4vw;
+  border: 4px solid #212121;
+  border-radius: 50%;
+  background: #333;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#light-bulb-toggle input:checked ~ span {
+  left: 10vw;
+}
+
+#light-bulb-toggle span ion-icon {
+  color: rgba(255, 255, 255, 0.25);
+  font-size: 2em;
+  transition: 0.5s;
+}
+
+#light-bulb-toggle input:checked ~ span bulb-outline {
+  color: rgba(255, 255, 255, 1);
+  filter: drop-shadow(0 0 3px #fff) drop-shadow(0 0 7px #fff)
+    drop-shadow(0 0 10px #fff);
+}
+
 
 
 
@@ -755,6 +820,9 @@ output{
   height: 48vw;
 }
 
+.carlos{
+  
+}
 
 
 
